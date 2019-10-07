@@ -1,0 +1,98 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    min-height: 500px;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.17);
+    border-radius: 5px;
+    text-align: center;
+    z-index: 400;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup__close:link, 
+.popup__close:visited {
+    position: absolute;
+    top: -2rem;
+    right: 0.5rem;
+    display: inline-block;
+    color: #555;
+    font-size: 5.5rem;
+    font-weight: 100;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.popup__close:hover {
+    color: rgb(7, 22, 20);
+}
+
+.popup__right {
+    font-size: 1.7rem;
+    width: 80%;
+    max-width: 1000px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff; 
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.17);
+    border-radius: 5px;
+    border: 1px solid rgb(7, 22, 20); 
+}
+
+@media screen and (min-width: 768px) {
+    .popup__right{
+        font-size: 2.3rem;
+    }
+}
+
+.popup__right h2 {
+    margin: 2.5rem 0 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+    .popup__right h2 {
+        margin: 5rem 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .popup__top {
+        padding: 1rem;
+    }
+}
+
+.popup__contact-info {
+    background: rgb(7, 22, 20);
+    color: #91abaa;
+    margin-top: 2rem;
+    padding: 2rem 1rem 1rem 1rem;
+    border: 2px solid rgb(7, 22, 20);
+}
+
+@media screen and (min-width: 768px) {
+    .popup__contact-info {
+        padding: 5rem 0 4rem 0;
+        margin-top: 6rem;
+    }
+}
+
+.popup__contact-info ul {
+    padding-bottom: 0;
+}
+
+.popup__contact-info a {
+    color: #91abaa !important;
+    text-decoration: none;
+}

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+@import url("base/base.css");
+@import url("base/tipo.css");
+@import url("base/util.css");
+@import url("base/grid.css");
+
+@import url("componentes/botoes.css");
+@import url("componentes/navegacao.css");
+@import url("componentes/popup.css");
+
+@import url("pag/home.css");
